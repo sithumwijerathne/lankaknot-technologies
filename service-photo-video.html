@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photo & Video Production | Lankaknot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <video class="bg-video" autoplay loop muted playsinline>
+      <source src="background.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+
+    <header class="header">
+      <div class="logo" style="display: flex; align-items: center;">
+        <img src="logo.png" alt="Lankaknot Logo" style="height: 40px; margin-right: 10px;">
+        <span class="gradient-text">LANKAKNOT</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="index.html#services" class="active">Services ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="service-web-development.html">Website Development</a></li>
+            <li><a href="service-company-systems.html">Company System Development</a></li>
+            <li><a href="service-apps-development.html">Applications Development</a></li>
+            <li><a href="service-photo-video.html">Photography and Video Production</a></li>
+            <li><a href="service-live-productions.html">Live Productions</a></li>
+          </ul>
+        </li>
+        <li><a href="kool.html">Kool Productions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-btn" id="mobile-menu-btn">
+        <span></span><span></span><span></span>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="index.html" class="mobile-link">Home</a></li>
+        <li>
+          <a href="#" class="mobile-link" id="mobile-services-btn">Services ▾</a>
+          <div class="mobile-dropdown-content" id="mobile-services-dropdown">
+            <a href="service-web-development.html" class="mobile-link">Website Development</a>
+            <a href="service-company-systems.html" class="mobile-link">Company Systems</a>
+            <a href="service-apps-development.html" class="mobile-link">Applications</a>
+            <a href="service-photo-video.html" class="mobile-link">Photo & Video</a>
+            <a href="service-live-productions.html" class="mobile-link">Live Productions</a>
+          </div>
+        </li>
+        <li><a href="kool.html" class="mobile-link">Kool Productions</a></li>
+        <li><a href="contact.html" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+
+    <section class="hero" style="min-height: 50vh; padding-top: 120px;">
+      <div class="container animate-on-scroll">
+        <h1>Photography & Video <span class="gradient-text">Production</span></h1>
+        <p>Cinematic storytelling and stunning photography to capture your brand's true voice by Kool Productions.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Recent Showcases</h2>
+        <div class="portfolio-grid">
+          <div class="portfolio-card animate-on-scroll">
+            <img src="https://images.unsplash.com/photo-1579738019623-df46fb26f986?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Drone photography" class="portfolio-img">
+            <div class="portfolio-info">
+              <h4>Real Estate Drone Coverage</h4>
+              <p>Aerial cinematic videography.</p>
+            </div>
+          </div>
+          <div class="portfolio-card animate-on-scroll" style="transition-delay: 0.1s">
+            <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Portrait photography" class="portfolio-img">
+            <div class="portfolio-info">
+              <h4>Corporate Headshots</h4>
+              <p>Professional team photography sessions.</p>
+            </div>
+          </div>
+          <div class="portfolio-card animate-on-scroll" style="transition-delay: 0.2s">
+            <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Video production" class="portfolio-img">
+            <div class="portfolio-info">
+              <h4>Product Commercials</h4>
+              <p>High-end social media product ad.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Select a Package</h2>
+        <div class="packages-grid">
+          <div class="package-card animate-on-scroll">
+            <h3 class="package-name">Essential Media</h3>
+            <div class="package-price">RS. 49,999/=</div>
+            <ul class="package-features">
+              <li>2 Hour Shoot Session</li>
+              <li>Basic Color Grading</li>
+              <li>20 Edited High-Res Photos</li>
+              <li>1 Minute Social Promo Video</li>
+            </ul>
+            <button class="btn-primary package-select-btn" data-package="Essential Media">Select Package</button>
+          </div>
+          
+          <div class="package-card popular animate-on-scroll" style="transition-delay: 0.1s">
+            <div class="popular-badge">Most Popular</div>
+            <h3 class="package-name">Pro Cinematic</h3>
+            <div class="package-price">RS. 100,000/=</div>
+            <ul class="package-features">
+              <li>Full Day Shoot</li>
+              <li>Drone Aerial Coverage</li>
+              <li>Advanced Sound Design & VFX</li>
+              <li>1x Feature Video & 100 Photos</li>
+            </ul>
+            <button class="btn-primary package-select-btn" data-package="Professional Media">Select Package</button>
+          </div>
+          
+          <div class="package-card animate-on-scroll" style="transition-delay: 0.2s">
+            <h3 class="package-name">Enterprise Script</h3>
+            <div class="package-price">RS. 150,000/= - 200,000/=</div>
+            <ul class="package-features">
+              <li>Creative Direction & Storyboarding</li>
+              <li>Full Broadcast Quality Crew</li>
+              <li>Actors & Studio Rentals</li>
+              <li>Copyrights Ownership Included</li>
+            </ul>
+            <button class="btn-primary package-select-btn" data-package="Enterprise Media">Select Package</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="section">
+      <div class="container text-center animate-on-scroll">
+        <div class="footer-bottom">
+          &copy; <span id="year"></span> Lankaknot Technologies & Kool Productions.
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

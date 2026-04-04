@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Applications Development | Lankaknot Technologies</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <video class="bg-video" autoplay loop muted playsinline>
+      <source src="background.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+
+    <header class="header">
+      <div class="logo" style="display: flex; align-items: center;">
+        <img src="logo.png" alt="Lankaknot Logo" style="height: 40px; margin-right: 10px;">
+        <span class="gradient-text">LANKAKNOT</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="index.html#services" class="active">Services ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="service-web-development.html">Website Development</a></li>
+            <li><a href="service-company-systems.html">Company System Development</a></li>
+            <li><a href="service-apps-development.html">Applications Development</a></li>
+            <li><a href="service-photo-video.html">Photography and Video Production</a></li>
+            <li><a href="service-live-productions.html">Live Productions</a></li>
+          </ul>
+        </li>
+        <li><a href="kool.html">Kool Productions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-btn" id="mobile-menu-btn">
+        <span></span><span></span><span></span>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="index.html" class="mobile-link">Home</a></li>
+        <li>
+          <a href="#" class="mobile-link" id="mobile-services-btn">Services ▾</a>
+          <div class="mobile-dropdown-content" id="mobile-services-dropdown">
+            <a href="service-web-development.html" class="mobile-link">Website Development</a>
+            <a href="service-company-systems.html" class="mobile-link">Company Systems</a>
+            <a href="service-apps-development.html" class="mobile-link">Applications</a>
+            <a href="service-photo-video.html" class="mobile-link">Photo & Video</a>
+            <a href="service-live-productions.html" class="mobile-link">Live Productions</a>
+          </div>
+        </li>
+        <li><a href="kool.html" class="mobile-link">Kool Productions</a></li>
+        <li><a href="contact.html" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+
+    <section class="hero" style="min-height: 50vh; padding-top: 120px;">
+      <div class="container animate-on-scroll">
+        <h1>Applications <span class="gradient-text">Development</span></h1>
+        <p>Native and cross-platform mobile apps engineered to deliver phenomenal user experiences.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Recent Apps</h2>
+        <div class="portfolio-grid">
+          <div class="portfolio-card animate-on-scroll">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Mobile app UI" class="portfolio-img">
+            <div class="portfolio-info">
+              <h4>FitTracker Pro</h4>
+              <p>Top-charting iOS fitness app.</p>
+            </div>
+          </div>
+          <div class="portfolio-card animate-on-scroll" style="transition-delay: 0.1s">
+            <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Code on phone" class="portfolio-img">
+            <div class="portfolio-info">
+              <h4>FoodDelivery Connect</h4>
+              <p>Real-time tracking delivery application.</p>
+            </div>
+          </div>
+          <div class="portfolio-card animate-on-scroll" style="transition-delay: 0.2s">
+            <img src="https://images.unsplash.com/photo-1618761714954-0b8cd0026356?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Digital Wallet" class="portfolio-img">
+            <div class="portfolio-info">
+              <h4>LankaPay Wallet</h4>
+              <p>Secure digital payment application.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0;">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Select a Package</h2>
+        <div class="packages-grid">
+          <div class="package-card animate-on-scroll">
+            <h3 class="package-name">Essential</h3>
+            <div class="package-price">RS. 60,000/=</div>
+            <ul class="package-features">
+              <li>Single Platform (iOS or Android)</li>
+              <li>Core App Features</li>
+              <li>Basic UI/UX Design</li>
+              <li>App Store Submission</li>
+            </ul>
+            <button class="btn-primary package-select-btn" data-package="Essential App">Select Package</button>
+          </div>
+          
+          <div class="package-card popular animate-on-scroll" style="transition-delay: 0.1s">
+            <div class="popular-badge">Most Popular</div>
+            <h3 class="package-name">Professional</h3>
+            <div class="package-price">RS. 100,000/=</div>
+            <ul class="package-features">
+              <li>Cross-Platform (iOS & Android)</li>
+              <li>Custom UI/UX & Animations</li>
+              <li>Push Notifications</li>
+              <li>Backend API setup</li>
+            </ul>
+            <button class="btn-primary package-select-btn" data-package="Professional App">Select Package</button>
+          </div>
+          
+          <div class="package-card animate-on-scroll" style="transition-delay: 0.2s">
+            <h3 class="package-name">Enterprise</h3>
+            <div class="package-price">RS. 150,000/= - 200,000/=</div>
+            <ul class="package-features">
+              <li>High-Scale Microservices</li>
+              <li>AI Machine Learning Integration</li>
+              <li>Advanced End-to-end Security</li>
+              <li>Dedicated Maintenance</li>
+            </ul>
+            <button class="btn-primary package-select-btn" data-package="Enterprise App">Select Package</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="section">
+      <div class="container text-center animate-on-scroll">
+        <div class="footer-bottom">
+          &copy; <span id="year"></span> Lankaknot Technologies. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

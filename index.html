@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lankaknot Technologies | Innovating Tech & Capturing Moments</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Background Video -->
+    <video class="bg-video" autoplay loop muted playsinline>
+      <!-- Change 'background.mp4' to your actual video file name -->
+      <source src="background.mp4" type="video/mp4">
+    </video>
+    <!-- Overlay to ensure text remains readable over the video -->
+    <div class="video-overlay"></div>
+
+    <header class="header">
+      <div class="logo" style="display: flex; align-items: center;">
+        <img src="logo.png" alt="Lankaknot Technologies Logo" style="height: 40px; margin-right: 10px;">
+        <span class="gradient-text">LANKAKNOT</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#services">Services ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="service-web-development.html">Website Development</a></li>
+            <li><a href="service-company-systems.html">Company System Development</a></li>
+            <li><a href="service-apps-development.html">Applications Development</a></li>
+            <li><a href="service-photo-video.html">Photography and Video Production</a></li>
+            <li><a href="service-live-productions.html">Live Productions</a></li>
+          </ul>
+        </li>
+        <li><a href="kool.html">Kool Productions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-btn" id="mobile-menu-btn">
+        <span></span><span></span><span></span>
+      </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="index.html" class="mobile-link">Home</a></li>
+        <li>
+          <a href="#" class="mobile-link" id="mobile-services-btn">Services ▾</a>
+          <div class="mobile-dropdown-content" id="mobile-services-dropdown">
+            <a href="service-web-development.html" class="mobile-link">Website Development</a>
+            <a href="service-company-systems.html" class="mobile-link">Company Systems</a>
+            <a href="service-apps-development.html" class="mobile-link">Applications</a>
+            <a href="service-photo-video.html" class="mobile-link">Photo & Video</a>
+            <a href="service-live-productions.html" class="mobile-link">Live Productions</a>
+          </div>
+        </li>
+        <li><a href="kool.html" class="mobile-link">Kool Productions</a></li>
+        <li><a href="contact.html" class="mobile-link">Contact</a></li>
+      </ul>
+    </div>
+
+    <section id="home" class="hero">
+      <div class="container animate-on-scroll">
+        <h1>Innovating <span class="gradient-text">Digital Futures</span></h1>
+        <p>
+          We deliver state-of-the-art web solutions, software development, and digital marketing strategies to elevate your brand to the next level.
+        </p>
+        <button class="btn-primary">Explore Our Work</button>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title animate-on-scroll">Our Services</h2>
+        <p class="section-subtitle animate-on-scroll">
+          Empowering businesses with cutting-edge technology and comprehensive digital strategies.
+        </p>
+        
+        <div class="services-grid">
+          <div class="glass-card animate-on-scroll">
+            <div class="card-icon">⚙️</div>
+            <h3>Company System Creation</h3>
+            <p>Tailored enterprise systems designed to streamline your operations, increase efficiency, and scale with your business growth.</p>
+          </div>
+          <div class="glass-card animate-on-scroll" style="transition-delay: 0.1s">
+            <div class="card-icon">💻</div>
+            <h3>Web Development</h3>
+            <p>Stunning, highly responsive websites built with modern frameworks to provide the best user experience and performance.</p>
+          </div>
+          <div class="glass-card animate-on-scroll" style="transition-delay: 0.2s">
+            <div class="card-icon">📱</div>
+            <h3>Software Development</h3>
+            <p>Custom software solutions engineered to solve complex challenges and drive innovation forward.</p>
+          </div>
+          <div class="glass-card animate-on-scroll" style="transition-delay: 0.3s">
+            <div class="card-icon">📈</div>
+            <h3>Digital Marketing</h3>
+            <p>Data-driven marketing strategies to expand your reach, engage your audience, and maximize ROI.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kool" class="section kool-section">
+      <div class="kool-bg-glow"></div>
+      <div class="container">
+        <div class="kool-header animate-on-scroll">
+          <h2 class="section-title"><span class="gradient-text" style="background: linear-gradient(90deg, #f72585, #7209b7); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">Kool Productions</span></h2>
+          <p class="section-subtitle">
+            Our creative sub-company specializing in visual storytelling and live experiences.
+          </p>
+        </div>
+        
+        <div class="text-center animate-on-scroll">
+          <a href="kool.html" class="btn-primary" style="display:inline-block; margin-top:20px; background: linear-gradient(90deg, #f72585, #7209b7); box-shadow: 0 4px 15px rgba(247,37,133,0.3);">
+            Explore Portfolio & Services &rarr;
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="section">
+      <div class="container text-center animate-on-scroll">
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Ready to Transform Your Business?</h2>
+        <a href="contact.html" class="btn-primary" style="margin-top: 20px; display: inline-block; text-decoration: none;">Connect With Us</a>
+        <div class="footer-bottom">
+          &copy; <span id="year"></span> Lankaknot Technologies. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
